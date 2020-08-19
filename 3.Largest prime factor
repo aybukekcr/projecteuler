@@ -1,0 +1,10 @@
+from fonksiyon import isprime
+
+n = 600851475143
+i, eb=3, 2
+while(i<n**(1/2)):
+    if(isprime(i)==1):
+        if(n%i==0):
+            eb=i
+    i+=2
+print(eb)
